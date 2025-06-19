@@ -1,0 +1,54 @@
+idea layout https://www.madridvivienda.com/
+
+"Registrate para personalizar tus búsquedas"
+Barra de búsqueda en todo el site.
+Footer con datos de contacto y sellos de AlquilerMadrid 
+
+- En el cuadro de búsqueda en la home que el botón lleve al buscar2.php, cuando el usuario utilice el buscador, añadir en buscar2.php select con where OR name contains y en placeholder un texto más descriptivo.
+
+- Abajo poner uno de "Ver todas las propiedades, que lleve a list.php, con los datos restringidos solo lectura.
+
+- No olvidar exportar .sql para añadirlo al zip.
+
+- Grabar vídeo y subirlo al canal en oculto.
+
+- El usuario debe poder buscar por ID aunque no esté logado, en caso que haya visto un anuncio o se lo hayan recomendado.
+
+
+
+
+
+
+
+1. Parte Backend: Es la parte de administración.  admin.php ACCESO PRINCIPAL sesión admin
+ Esta parte es la encargada de entrar los usuarios que son de tipo_usuario: 
+administrador. 
+ El menú es distinto al resto tiene que poder: 
+• Alta, baja, Buscar, modificar, listar Usuarios  usuariosAdmin.php
+• Alta, baja, Buscar, modificar, listar Pisos     pisosAdmin.php
+ 
+INSERT INTO usuario (usuario_id, nombres, correo, clave, tipo_usuario)
+VALUES (1, 'admin', 'admin@chile.com', 'adminPisos', 'admin');
+
+
+2. Parte Frontend: Parte de clientes 
+ 
+• Los clientes tienen que darse de alta(registro) mediante algún formulario y 
+guardar los datos en la BBDD. 
+• Hay 2 tipos de clientes: 
+▪ Compradores 
+▪ Vendedores 
+ 
+• Hay que hacer una web de login y dejar entrar a los usuarios que estén dados 
+de alta en la BBDD: 
+▪ Los compradores deben tener alguna forma de buscar piso y poder 
+verlo y comprarlo. 
+▪ Los vendedores tienen que poder dar de alta un piso, con sus datos. 
+• Hay que usar sesiones para mantener al usuario en la web. 
+ 
+3. Parte Frontend: Sin ser clientes y sin estar logueado 
+ 
+• Cualquiera puede consultar los pisos dados de alta en la BBDD.  
+• No puede comprar ni registrar pisos nadie que no esté dado de alta, solo 
+consultar. 
+ 

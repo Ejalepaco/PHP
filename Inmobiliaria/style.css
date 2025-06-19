@@ -1,0 +1,78 @@
+.menu {
+  display: flex;
+  justify-content: space-around; /* Espacia el logo y los enlaces */
+  align-items: center; /* Alinea verticalmente */
+  background-color: #f8f9fa; /* Color de fondo opcional */
+  padding: 10px 20px;
+  border: 2px blue solid;
+}
+footer {
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+.volverInicio {
+  background-color: white;
+  color: black;
+  margin-top: 5px;
+  text-align: center;
+}
+.logo img {
+  height: 100px; /* Ajusta el tamaño del logo */
+}
+form {
+  height: 60px;
+  width: 80%;
+}
+.busqueda {
+  background-color: wheat;
+  border-radius: 10px;
+  border: 2px blue solid;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+.container {
+  text-align: center;
+}
+.titulos {
+  margin: 50px;
+  text-align: center;
+}
+body {
+  background-image: url(./images/fondo.png);
+}
+section {
+  margin: 20px;
+}
+aside {
+  background-color: burlywood;
+}
+.formularioRegistro {
+  border: 2px solid black;
+  height: fit-content;
+  padding-top: 5px;
+  font-size: xx-large;
+  text-align: center;
+}
+.resultados-busqueda {
+  border: 5px solid black;
+  background-color: wheat;
+}
+
+.formularioPropiedad {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: medium;
+}
+
+input {
+  size: "40";
+}
+
+.link{
+  text-align: center;
+}

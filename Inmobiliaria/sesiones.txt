@@ -1,0 +1,91 @@
+LOGOUT
+
+    <?php
+    session_start();
+    session_destroy();
+    header("Location: login.php");
+    exit();
+
+
+    ?>
+
+
+
+
+<?php
+session_start();
+if (!isset($_SESSION['usuario'])) {
+  header("Location: login.php");
+  exit();
+}
+?>
+
+<?php
+// Información de conexión
+include 'conn.php';
+// Crear la Conexión
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Comprueba la conexion
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+session_start();
+if (!isset($_SESSION['usuario'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+
+<?php
+session_start();
+if (!isset($_SESSION['usuario'])) {
+  header("Location: login.php");
+  exit();
+}
+?>
+<?php
+session_start();
+if (!isset($_SESSION['usuario'])) {
+  header("Location: login.php");
+  exit();
+}
+?>
+
+<?php
+session_start();
+if (!isset($_SESSION['usuario'])) {
+  header("Location: login.php");
+  exit();
+}
+?>
+
+<?php
+include 'conn.php';
+session_start();
+if (!isset($_SESSION['usuario_id'])) {
+  header('Location: login.php');  // Redirige al login si no está autenticado
+  exit();
+}
+$usuario_id = $_SESSION['usuario_id'];
+?>
+
+<?php
+include 'conn.php';
+session_start();
+if (!isset($_SESSION['usuario_id'])) {
+  header('Location: login.php');  // Redirige al login si no está autenticado
+  exit();
+}
+$usuario_id = $_SESSION['usuario_id'];
+?>
+
+<?php
+include 'conn.php';
+session_start();
+if (!isset($_SESSION['usuario_id'])) {
+  header('Location: login.php');  // Redirige al login si no está autenticado
+  exit();
+}
+$usuario_id = $_SESSION['usuario_id'];
+?>
+
