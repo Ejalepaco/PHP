@@ -1,0 +1,13 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copy-home {
+  text-align: justify;
+}
+.video-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

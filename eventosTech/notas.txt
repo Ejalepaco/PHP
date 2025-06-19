@@ -1,0 +1,25 @@
+navbar con los siguientes apartados: logo izquierda, buscador, crear eventos, iniciar sesión, registrarse.
+
+dentro de iniciar sesión: área privada, con acceso a "mis eventos" donde aparezcan los que he creado.
+Ver más eventos de la comunidad, añadidos a la base de datos al inicio. 
+Categorías: marketing, deporte, empleo.
+
+div class browse-section para indicar las categorías de eventos disponibles. Incluir cards para esta parte.
+
+imagen feria de empleo https://alicantehoy.es/wp-content/uploads/2024/10/Stands-de-la-feria.jpeg
+
+imagen evento deportivo https://roquetasdemar.es/wp-content/uploads/2021/02/Pabellon-en-el-torneo-scaled.jpg 
+
+imagen evento musical https://estaticos.esmadrid.com/cdn/farfuture/72GFwMbSe8jSDjkgmJ8OyKVzXPH8nzhlimjpTY77eGc/mtime:1720176591/sites/default/files/eventos/eventos/juanes_festival_rio_babel_2024.jpg
+
+imagen evento vinos https://www.bodegasvaldelana.com/wp-content/uploads/2017/08/eventos-privados-bodegas-valdelana.jpg 
+
+imagen evento tech https://imagenes.heraldo.es/files/image_1920_1080/uploads/imagenes/2025/01/30/el-festival-que-llega-ahora-zaragoza-celebro-su-primera-edicion-el-pasado-ano-en-valencia.jpeg 
+
+SQL con ChatGPT
+INSERT INTO eventos (nombre, fecha, descripcion, lugar, capacidad) VALUES
+('Feria de Empleo 2025', '2025-04-15', 'Evento de reclutamiento con empresas líderes en tecnología y negocios.', 'Centro de Convenciones', 500),
+('Copa Primavera Voleibol VCM', '2025-05-20', 'Torneo de voleibol con equipos nacionales e internacionales.', 'Gimnasio Municipal', 1000),
+('Festival de Música Indie', '2025-06-10', 'Concierto con las mejores bandas indie de la región.', 'Auditorio Nacional', 1500),
+('Hackathon Innovatech', '2025-07-05', 'Competencia de programación de 48 horas para resolver desafíos tecnológicos.', 'Campus Tecnológico', 300),
+('Cata de Vinos Premium', '2025-08-12', 'Degustación exclusiva de vinos de bodegas reconocidas.', 'Viñedos La Rioja', 100);
